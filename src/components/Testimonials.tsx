@@ -5,22 +5,64 @@ import { useState } from "react";
 
 const testimonials = [
   {
-    name: "\u0415\u043b\u0435\u043d\u0430 \u041c.",
-    role: "\u041a\u0430\u043c\u043f\u0430\u043d\u0430\u0440",
+    name: "Елена М.",
+    role: "Кампанар",
     text:
-      "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b\u0438 \u043e\u0441\u043c\u043e\u0441 \u0437\u0430 \u043e\u0434\u0438\u043d \u0432\u0438\u0437\u0438\u0442. \u0412\u043e\u0434\u0430 \u043c\u044f\u0433\u043a\u0430\u044f, \u0447\u0430\u0439 \u0432\u043a\u0443\u0441\u043d\u0435\u0435. \u041d\u0430\u043f\u043e\u043c\u0438\u043d\u0430\u044e\u0442 \u043e \u0437\u0430\u043c\u0435\u043d\u0435 \u0444\u0438\u043b\u044c\u0442\u0440\u043e\u0432 \u0441\u0430\u043c\u0438 \u2014 \u043e\u0447\u0435\u043d\u044c \u0443\u0434\u043e\u0431\u043d\u043e.",
+      "Установили осмос за один визит. Вода мягкая, чай вкуснее. Напоминают о замене фильтров сами — очень удобно.",
   },
   {
-    name: "\u041c\u0430\u0440\u043a \u0422.",
-    role: "\u0420\u0443\u0441\u0430\u0444\u0430",
+    name: "Марк Т.",
+    role: "Русафа",
     text:
-      "\u0421\u043e\u043c\u043d\u0435\u0432\u0430\u043b\u0441\u044f \u0432 \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0435, \u043d\u043e \u0432\u044b\u0445\u043e\u0434\u0438\u0442 \u0434\u0435\u0448\u0435\u0432\u043b\u0435 \u0431\u0443\u0442\u044b\u043b\u043e\u043a. \u041c\u0430\u0441\u0442\u0435\u0440 \u0430\u043a\u043a\u0443\u0440\u0430\u0442\u043d\u044b\u0439, \u043a\u0443\u0445\u043d\u044e \u043d\u0435 \u0438\u0441\u043f\u043e\u0440\u0442\u0438\u043b\u0438.",
+      "Сомневался в подписке, но выходит дешевле бутылок. Мастер аккуратный, кухню не испортили.",
   },
   {
-    name: "\u0410\u043d\u043d\u0430 \u041a.",
-    role: "\u0411\u0435\u043d\u0438\u043c\u0430\u043a\u043b\u0435\u0442",
+    name: "Анна К.",
+    role: "Бенимаклет",
     text:
-      "\u041f\u043e\u0441\u043b\u0435 \u0442\u0435\u0441\u0442\u0430 \u0432\u043e\u0434\u044b \u0432\u0441\u0451 \u043e\u0431\u044a\u044f\u0441\u043d\u0438\u043b\u0438 \u043f\u0440\u043e\u0441\u0442\u044b\u043c \u044f\u0437\u044b\u043a\u043e\u043c. \u041f\u043e\u0434\u043e\u0431\u0440\u0430\u043b\u0438 \u043a\u043e\u043c\u043f\u0430\u043a\u0442\u043d\u0443\u044e \u0441\u0438\u0441\u0442\u0435\u043c\u0443 \u043f\u043e\u0434 \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0439 \u0448\u043a\u0430\u0444.",
+      "После теста воды всё объяснили простым языком. Подобрали компактную систему под маленький шкаф.",
+  },
+  {
+    name: "Дмитрий С.",
+    role: "Альборайя",
+    text:
+      "В частном доме было слабое давление — поставили систему с помпой. Наконец-то нормальный поток с крана, жена довольна.",
+  },
+  {
+    name: "Ольга В.",
+    role: "Гадор",
+    text:
+      "Дети стали пить больше воды прямо из крана, бутылки из магазина почти не берём. Спасибо за честную консультацию без давления.",
+  },
+  {
+    name: "Сергей П.",
+    role: "Торрент",
+    text:
+      "Показали цифры TDS до и после установки — разница наглядная. Оформили обслуживание, приезжают по графику, без сюрпризов.",
+  },
+  {
+    name: "Ирина Л.",
+    role: "Бурассот",
+    text:
+      "Долго выбирали компанию: здесь без навязчивости и «лишних» опций. Установка заняла пару часов, за собой всё убрали.",
+  },
+  {
+    name: "Павел Н.",
+    role: "Л'Эльяна",
+    text:
+      "С минерализацией вода приятная на вкус, не «плоская». Мастер всё подключил аккуратно и объяснил, что за каким модулем.",
+  },
+  {
+    name: "Наталья Р.",
+    role: "Чива",
+    text:
+      "В старом доме вода с привкусом и осадком. После осмоса кипятить не обязательно — пьём спокойно, чайник почти без накипи.",
+  },
+  {
+    name: "Виктор Г.",
+    role: "Масамагрелль",
+    text:
+      "По подписке заранее напомнили о проверке и приехали в удобное окно. Сервис предсказуемый — рекомендую знакомым.",
   },
 ];
 
@@ -39,12 +81,10 @@ export function Testimonials() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
-            {"\u041e\u0442\u0437\u044b\u0432\u044b \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432"}
+            Отзывы клиентов
           </h2>
           <p className="mt-3 text-slate-600">
-            {
-              "\u0420\u0435\u0430\u043b\u044c\u043d\u044b\u0435 \u0438\u0441\u0442\u043e\u0440\u0438\u0438 \u0438\u0437 \u0412\u0430\u043b\u0435\u043d\u0441\u0438\u0438 \u0438 \u043e\u043a\u0440\u0435\u0441\u0442\u043d\u043e\u0441\u0442\u0435\u0439."
-            }
+            Реальные истории из Валенсии и окрестностей.
           </p>
         </div>
 
@@ -67,7 +107,7 @@ export function Testimonials() {
                   type="button"
                   onClick={prev}
                   className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-slate-600 transition hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
-                  aria-label="\u041f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0438\u0439 \u043e\u0442\u0437\u044b\u0432"
+                  aria-label="Предыдущий отзыв"
                 >
                   <ChevronLeft className="h-5 w-5" />
                 </button>
@@ -75,13 +115,13 @@ export function Testimonials() {
                   type="button"
                   onClick={next}
                   className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-slate-600 transition hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
-                  aria-label="\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u043e\u0442\u0437\u044b\u0432"
+                  aria-label="Следующий отзыв"
                 >
                   <ChevronRight className="h-5 w-5" />
                 </button>
               </div>
             </figcaption>
-            <div className="mt-4 flex justify-center gap-1.5">
+            <div className="mt-4 flex flex-wrap justify-center gap-1.5">
               {testimonials.map((_, i) => (
                 <button
                   key={i}
@@ -89,10 +129,10 @@ export function Testimonials() {
                   onClick={() => setIndex(i)}
                   className={
                     i === index
-                      ? "h-2 w-6 rounded-full bg-brand-500 transition"
-                      : "h-2 w-2 rounded-full bg-slate-300 transition hover:bg-slate-400"
+                      ? "h-2 w-6 shrink-0 rounded-full bg-brand-500 transition"
+                      : "h-2 w-2 shrink-0 rounded-full bg-slate-300 transition hover:bg-slate-400"
                   }
-                  aria-label={`\u041e\u0442\u0437\u044b\u0432 ${i + 1}`}
+                  aria-label={`Отзыв ${i + 1}`}
                 />
               ))}
             </div>

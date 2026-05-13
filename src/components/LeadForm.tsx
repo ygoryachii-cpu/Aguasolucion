@@ -83,7 +83,7 @@ export function LeadForm() {
                     name="comment"
                     rows={4}
                     className="w-full resize-y rounded-xl border border-slate-200 px-4 py-3 text-slate-900 shadow-sm outline-none transition focus:border-brand-400 focus:ring-2 focus:ring-brand-500/20"
-                    placeholder="Район, удобное время, тип жилья"
+                    placeholder="- район, тип жилья(квартира/ загородный дом), какая услуга необходима"
                   />
                 </div>
                 <button

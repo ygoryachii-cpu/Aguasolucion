@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { LeadForm } from "@/components/LeadForm";
+import { ReverseOsmosisExplainer } from "@/components/ReverseOsmosisExplainer";
 import { Pricing } from "@/components/Pricing";
 import { Products } from "@/components/Products";
 import { Reveal } from "@/components/Reveal";
@@ -16,6 +17,9 @@ export default function Home() {
       <main>
         <Reveal>
           <Hero />
+        </Reveal>
+        <Reveal delay={0.05}>
+          <ReverseOsmosisExplainer />
         </Reveal>
         <Reveal delay={0.05}>
           <Features />

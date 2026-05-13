@@ -1,7 +1,6 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 
 type RevealProps = {
   children: React.ReactNode;
@@ -9,15 +8,22 @@ type RevealProps = {
   delay?: number;
 };
 
+/**
+ * Лёгкая анимация появления при скролле. Не используем opacity: 0 в initial:
+ * при сбое гидратации / IntersectionObserver контент остаётся читаемым.
+ */
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-64px" });
+  const reduceMotion = useReducedMotion();
+
+  if (reduceMotion) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 32 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      initial={{ y: 20 }}
+      whileInView={{ y: 0 }}
+      viewport={{ once: true, amount: 0.01 }}
       transition={{
         duration: 0.5,
         delay,

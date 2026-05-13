@@ -1,34 +1,23 @@
-import {
-  CalendarClock,
-  Droplets,
-  PiggyBank,
-  Shield,
-} from "lucide-react";
+import { CalendarClock, PiggyBank, Shield } from "lucide-react";
 
 const features = [
   {
-    title: "Продление срока службы техники",
+    title: "Безопасная вода для всей семьи",
     description:
-      "Мягкая вода без накипи снижает износ бойлера, стиральной машины и посудомойки.",
-    icon: Droplets,
+      "Фильтры обратного осмоса удаляют 95–98% примесей. Покажем Вам разницу в количестве примесей по сравнению с водопроводной водой после установки фильтра.",
+    icon: Shield,
   },
   {
-    title: "Безопасная вода для семьи",
+    title: "Экономия сил, места и денег.",
     description:
-      "Снижение хлора, механических частиц и неприятного запаха — прозрачный вкус из крана.",
-    icon: Shield,
+      "Меньше покупной бутилированной воды. Не нужно постоянно носить воду из магазина или хранить тяжёлые бутыли от кулера.",
+    icon: PiggyBank,
   },
   {
     title: "Плановое обслуживание",
     description:
       "Напоминания о замене модулей и выезд мастера по графику — без сюрпризов.",
     icon: CalendarClock,
-  },
-  {
-    title: "Экономия в долгую",
-    description:
-      "Меньше покупной бутилированной воды и реже — ремонт бытовой техники.",
-    icon: PiggyBank,
   },
 ];
 
@@ -47,7 +36,7 @@ export function Features() {
             Фокус на качестве воды, прозрачных тарифах и спокойствии клиента.
           </p>
         </div>
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {features.map((item) => {
             const Icon = item.icon;
             return (

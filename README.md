@@ -18,6 +18,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Открытие в Cursor «как остальные проекты»
+
+1. **Один раз открой папку проекта:** `File → Open Folder…` и выбери каталог с этим репозиторием (или `File → Open Workspace from File…` и укажи `Aguasolucion.code-workspace`). После этого проект появится в списке **Recent** на стартовом экране Cursor.
+2. **Рабочая область:** в корне лежит файл `Aguasolucion.code-workspace` — через него удобно открывать проект с именем «Aguasolucion» в заголовке.
+3. **Сервер разработки:** `Terminal → Run Build Task…` (или сочетание по умолчанию для *Run Build Task*) — запустится задача **Aguasolucion: dev server** (`npm run dev`).
+
+Чтобы проект не терялся среди временных папок Cursor, клонируй репозиторий в постоянное место, например `C:\Users\User\Projects\Aguasolucion`, и открывай уже эту папку в Cursor.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
